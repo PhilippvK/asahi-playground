@@ -1,0 +1,12 @@
+[submodule "qemu"]
+	path = qemu
+	url = https://github.com/modwizcode/qemu.git
+[submodule "linux"]
+	path = linux
+	url = https://github.com/AsahiLinux/linux.git
+[submodule "vscode-dev-containers"]
+	path = vscode-dev-containers
+	url = https://github.com/microsoft/vscode-dev-containers.git
+[submodule "m1n1"]
+	path = m1n1
+	url = https://github.com/AsahiLinux/m1n1.git
