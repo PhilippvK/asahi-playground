@@ -1,0 +1,26 @@
+file /init init 0755 0 0
+
+dir /dev 0755 0 0
+nod /dev/null 0666 0 0 c 1 3
+nod /dev/tty3 0666 0 0 c 5 0
+nod /dev/console 0600 0 0 c 5 1
+
+dir /tmp 0755 0 0
+dir /sys 0755 0 0
+dir /proc 0755 0 0
+
+dir /lib 0755 0 0
+dir /lib/firmware 0755 0 0
+
+dir /bin 0755 0 0
+slink /sbin bin 0755 0 0
+file /bin/busybox bin/busybox 0755 0 0
+# busybox symlinks
+slink /bin/[ busybox 0755 0 0
+slink /bin/[[ busybox 0755 0 0
+slink /bin/sh busybox 0755 0 0
+slink /bin/ash busybox 0755 0 0
+slink /bin/echo busybox 0755 0 0
+slink /bin/mount busybox 0755 0 0
+slink /bin/ls busybox 0755 0 0
+slink /bin/sleep busybox 0755 0 0
