@@ -1,3 +1,5 @@
 logs
 artifacts
 env.sh
+initramfs/**/
+*.gz
